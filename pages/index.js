@@ -5,9 +5,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
 import Login from '../components/Login'
+import Sidebar from '../components/Sidebar'
+import Feed from '../components/Feed'
 
 export default function Home({session}) {
-  
+
   if(!session)return <Login/>
   console.log(session);
 
@@ -21,9 +23,10 @@ export default function Home({session}) {
 
       <Header/>
 
-      <main>
-        {/* sidebar */}
-        {/* feed */}
+      <main className='flex'>
+        <Sidebar/>
+        <Feed/>
+        
         {/* widgets */}
       </main>
 
