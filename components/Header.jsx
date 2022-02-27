@@ -16,7 +16,7 @@ console.log(session)
     <div className='flex border-b-2 border-solid px-2'>
       <div className='flex p-2'>
 
-          <Image src={fb_logo} height={40} width={40}/>
+          <Image className='flex justify-start' src={fb_logo} height={40} width={40}/>
 
           <div className='flex items-center ml-3 bg-gray-200 rounded-full '>
               <SearchIcon className=' h-5 w-6 text-gray-800 ml-3 '/>
@@ -36,7 +36,7 @@ console.log(session)
           <div className="flex items-center ">
             
               {session?.user?.image && <Image src={session.user.image} className="rounded-full cursor-pointer"  width="40px" height="40px" onClick={signOut}/> }
-              <h3 className='mr-4 font-semibold'>swathi</h3>
+              <h3 className='mr-2 font-semibold'>{session.user.name}</h3>
               
               <div className='flex justify-between hidden xl:inline-flex'>
                 <HeaderIcon Icon={ViewGridIcon} />
