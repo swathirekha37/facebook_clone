@@ -23,7 +23,7 @@ export default function Home({session}) {
 
       <Header/>
 
-      <main className='flex'>
+      <main className='flex items-center'>
         <Sidebar/>
         <Feed/>
         
