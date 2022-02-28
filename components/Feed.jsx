@@ -5,7 +5,7 @@ import InputBox from './InputBox';
 
 function Feed() {
   return (
-    <div>
+    <div className=''>
       <Stories/>
       <InputBox/>
 
